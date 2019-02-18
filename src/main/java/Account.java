@@ -30,5 +30,7 @@ public class Account {
 
   public void makeWithdrawal(double amount) {
     balance -= amount;
+    System.out.println("MMM balance is: " + balance);
+    transaction.addTransaction(new Date(), 0, -amount, balance);
   }
 }

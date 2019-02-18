@@ -26,5 +26,6 @@ public class Transaction {
       transactionLog.add(strDate + " || " + strAmount + " || || " + strBalance + "\n");
 
         transactionLog.add(strDate + " || || " + strAmount + " || " + strBalance + "\n");
+        // System.out.println("TransLog is: " + transactionLog);
   }
 }
