@@ -23,7 +23,6 @@ public class FeatureTest {
       account.makeDeposit(1000.10);
       account.makeDeposit(2000.01);
       account.makeWithdrawal(500.00);
-
       assertTrue(account.currentBalance() == 2500.11);
   }
 }

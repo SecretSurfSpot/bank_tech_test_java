@@ -24,7 +24,7 @@ public class TransactionTest {
     String strDate = simpleDateFormat.format(date);
 
     transaction.addTransaction(date, 1, 10.00, 10.00);
-    assertEquals(strDate + " || 10.00 || || 10.00\n", transaction.transactionLog.get(0));
+    assertEquals(strDate + " || 10.00 || || 10.00\n", transaction.returnTransactionLog().get(0));
   }
 
   @Test
@@ -35,6 +35,6 @@ public class TransactionTest {
     String strDate = simpleDateFormat.format(date);
 
     transaction.addTransaction(date, 0, -10.00, -10.00);
-    assertEquals(strDate + " || || -10.00 || -10.00\n", transaction.transactionLog.get(0));
+    assertEquals(strDate + " || || -10.00 || -10.00\n", transaction.returnTransactionLog().get(0));
   }
 }

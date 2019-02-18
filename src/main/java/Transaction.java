@@ -14,6 +14,10 @@ public class Transaction {
     ArrayList transactionLog[];
   }
 
+  public ArrayList returnTransactionLog() {
+    return transactionLog;
+  }
+
   public void addTransaction(Date date, int flag, double amount, double balance) {
     DecimalFormat formatter = new DecimalFormat("#0.00");
     String strAmount = formatter.format(amount);
