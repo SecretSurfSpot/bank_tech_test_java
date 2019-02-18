@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TransactionTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-02-18T18:15:51" hostname="Andrews-MacBook-Pro.local" time="0.069">
+<testsuite name="TransactionTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-02-18T18:17:26" hostname="Andrews-MacBook-Pro.local" time="0.065">
   <properties/>
-  <testcase name="depostitAddedToTransaction" classname="TransactionTest" time="0.069"/>
+  <testcase name="depostitAddedToTransaction" classname="TransactionTest" time="0.065"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
