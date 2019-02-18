@@ -21,4 +21,8 @@ public class Account {
   public void makeDeposit(double amount) {
     balance += amount;
   }
+
+  public void makeWithdrawal(double amount) {
+    balance -= amount;
+  }
 }
