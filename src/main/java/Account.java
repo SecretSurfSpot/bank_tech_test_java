@@ -17,4 +17,8 @@ public class Account {
   public double currentBalance() {
     return balance;
   }
+
+  public void makeDeposit(double amount) {
+    balance += amount;
+  }
 }
