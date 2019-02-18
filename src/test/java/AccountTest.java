@@ -24,4 +24,11 @@ public class AccountTest {
 
     assertTrue(account.currentBalance() == 1000.00);
   }
+
+  @Test
+  public void withdrawalDecreasesBalance() {
+    account.makeWithdrawal(1000.00);
+
+    assertTrue(account.currentBalance() == -1000.00);
+  }
 }
