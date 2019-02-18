@@ -15,7 +15,6 @@ public class Account {
   }
 
   public double currentBalance() {
-    System.out.println(new Date());
     return balance;
   }
 }

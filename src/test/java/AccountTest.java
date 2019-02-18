@@ -17,4 +17,11 @@ public class AccountTest {
   public void zeroBalanceTest() {
     assertTrue(account.currentBalance() == 0.00);
   }
+
+  @Test
+  public void depostiIncreasesBalance() {
+    account.makeDeposit(1000.00);
+
+    assertTrue(account.currentBalance() == 1000.00);
+  }
 }
