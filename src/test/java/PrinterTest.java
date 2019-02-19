@@ -30,6 +30,6 @@ public class PrinterTest {
   @Test
   public void atest() {
     printer.printStatement(testTransactionLog);
-    assertEquals(testReveseTransactionLog, printer.result);
+    assertEquals(testReveseTransactionLog, printer.reveseTransactionLog);
   }
 }

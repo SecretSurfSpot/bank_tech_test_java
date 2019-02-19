@@ -32,9 +32,6 @@ public class Transaction {
     } else {
       transactionLog.add(strDate + " || || " + strAmount + " || " + strBalance + "\n");
       // System.out.println("MMM - TransLog is: " + transactionLog);
-    }
-
-
-
+    }      
   }
 }
