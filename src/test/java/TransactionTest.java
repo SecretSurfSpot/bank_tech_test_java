@@ -23,6 +23,9 @@ public class TransactionTest {
     testTransactionLog.add(strDate + " || 1000.00 || || 1000.00\n");
     testTransactionLog.add(strDate + " || 2000.00 || || 3000.00\n");
     testTransactionLog.add(strDate + " || || -500.00 || 2500.00\n");
+
+    System.out.println("date is: " + date);
+    System.out.println("strDate is: " + strDate);
   }
 
   @Test
@@ -42,6 +45,8 @@ public class TransactionTest {
     transaction.addTransaction(date, 1, 1000.00, 1000.00);
     transaction.addTransaction(date, 1, 2000.00, 3000.00);
     transaction.addTransaction(date, 0, -500.00, 2500.00);
+
+    System.out.println("testTransactionLog is: " + testTransactionLog);
     assertEquals(testTransactionLog, transaction.transactionLog);
   }
 }
