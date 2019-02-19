@@ -26,10 +26,15 @@ public class Transaction {
     SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
     String strDate = simpleDateFormat.format(date);
 
-    if (flag == 1)
+    if (flag == 1) {
       transactionLog.add(strDate + " || " + strAmount + " || || " + strBalance + "\n");
+        // System.out.println("MMM + TransLog is: " + transactionLog);
+    } else {
+      transactionLog.add(strDate + " || || " + strAmount + " || " + strBalance + "\n");
+      // System.out.println("MMM - TransLog is: " + transactionLog);
+    }
 
-        transactionLog.add(strDate + " || || " + strAmount + " || " + strBalance + "\n");
-        // System.out.println("TransLog is: " + transactionLog);
+
+
   }
 }
