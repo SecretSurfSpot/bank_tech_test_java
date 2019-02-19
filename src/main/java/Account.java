@@ -16,7 +16,7 @@ public class Account {
 
   public Account(double balance) {
     this.balance = balance;
-    // this.transaction = transaction;
+    this.transaction = transaction;
   }
 
   public double currentBalance() {
@@ -30,7 +30,6 @@ public class Account {
 
   public void makeWithdrawal(double amount) {
     balance -= amount;
-    System.out.println("MMM balance is: " + balance);
     transaction.addTransaction(new Date(), 0, -amount, balance);
   }
 }
