@@ -24,11 +24,13 @@ public class Account {
   }
 
   public void makeDeposit(double amount) {
+    System.out.println("Amount is: " + amount);
     balance += amount;
     transaction.addTransaction(new Date(), 1, amount, balance);
   }
 
   public void makeWithdrawal(double amount) {
+    System.out.println("Amount is: " + amount);
     balance -= amount;
     transaction.addTransaction(new Date(), 0, -amount, balance);
   }

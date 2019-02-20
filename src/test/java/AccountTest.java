@@ -8,7 +8,6 @@ import org.junit.rules.ExpectedException;
 
 import static org.junit.Assert.assertTrue;
 
-
 public class AccountTest {
 
   private Account account;
@@ -38,10 +37,32 @@ public class AccountTest {
     assertTrue(account.currentBalance() == -1000.00);
   }
 
-  @Test
-  public void testValidatesAmountNotString() {
+  public void expectedExceptionAmountIsPositive() {
     expectedException.expect(IllegalArgumentException.class);
-    expectedException.expectMessage("Error: amount must be a number.");
-    account.makeWithdrawal("one hundred");
+    expectedException.expectMessage("Error: amount must be positive.");
+  }
+
+  @Test
+  public void validatesWithdrawalAmountIsPositive_0() {
+    expectedExceptionAmountIsPositive();
+    account.makeWithdrawal(0);
+  }
+
+  @Test
+  public void validatesWithdrawal0AmountIsPositive_1() {
+    expectedExceptionAmountIsPositive();
+    account.makeWithdrawal(-1);
+  }
+
+  @Test
+  public void validatesDepositAmountIsPositive_0() {
+    expectedExceptionAmountIsPositive();
+    account.makeDeposit(0);
+  }
+
+  @Test
+  public void validatesDepositAmountIsPositive_1() {
+    expectedExceptionAmountIsPositive();
+    account.makeDeposit(-1);
   }
 }

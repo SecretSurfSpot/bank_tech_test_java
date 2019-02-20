@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TransactionTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-02-20T13:57:58" hostname="Andrews-MacBook-Pro.local" time="0.043">
+  <properties/>
+  <testcase name="withdrawalAddedToTransaction" classname="TransactionTest" time="0.04"/>
+  <testcase name="depositX2WithdrawalX1AddedToTransaction" classname="TransactionTest" time="0.002"/>
+  <testcase name="depostitAddedToTransaction" classname="TransactionTest" time="0.001"/>
+  <system-out><![CDATA[date is: Wed Feb 20 13:57:58 GMT 2019
+strDate is: 20/02/2019
+date is: Wed Feb 20 13:57:58 GMT 2019
+strDate is: 20/02/2019
+testTransactionLog is: [20/02/2019 || 1000.00 || || 1000.00
+, 20/02/2019 || 2000.00 || || 3000.00
+, 20/02/2019 || || -500.00 || 2500.00
+]
+date is: Wed Feb 20 13:57:58 GMT 2019
+strDate is: 20/02/2019
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
