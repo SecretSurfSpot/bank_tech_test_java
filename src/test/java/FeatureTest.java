@@ -1,5 +1,5 @@
+import main.java.TestHelper;
 import main.java.Account;
-import main.java.Transaction;
 
 import org.junit.Before;
 import java.util.Date;
@@ -11,18 +11,23 @@ import static org.junit.Assert.assertTrue;
 
 public class FeatureTest {
 
+  private TestHelper testHelper;
   private Account account;
 
   @Before
   public void setup() {
+    testHelper = new TestHelper();
     account = new Account();
   }
 
   @Test
   public void make2Deposits1Withdrawal() {
-      account.makeDeposit(1000.10);
-      account.makeDeposit(2000.01);
+      testHelper.createTestTransactionLog();
+      account.makeDeposit(1000.00);
+      account.makeDeposit(2000.00);
       account.makeWithdrawal(500.00);
-      assertTrue(account.currentBalance() == 2500.11);
+      assertTrue(account.currentBalance() == 2500.00);
+      System.out.println("account.transaction is : " + account.transaction.transactionLog);
+      assertEquals(testHelper.testTransactionLog, account.transaction.transactionLog);
   }
 }

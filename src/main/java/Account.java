@@ -7,7 +7,7 @@ import java.util.Date;
 public class Account {
 
   private double balance;
-  private Transaction transaction = new Transaction();
+  public Transaction transaction = new Transaction();
 
   public Account() {
     double balance = 0.00;
