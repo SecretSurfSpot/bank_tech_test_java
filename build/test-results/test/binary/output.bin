@@ -1,12 +1,12 @@
-&date is: Wed Feb 20 13:57:58 GMT 2019
+&date is: Wed Feb 20 14:27:35 GMT 2019
 strDate is: 20/02/2019
-&date is: Wed Feb 20 13:57:58 GMT 2019
+&date is: Wed Feb 20 14:27:35 GMT 2019
 strDate is: 20/02/2019
 <testTransactionLog is: [20/02/2019 || 1000.00 || || 1000.00
 &, 20/02/2019 || 2000.00 || || 3000.00
 &, 20/02/2019 || || -500.00 || 2500.00
 ]
-&date is: Wed Feb 20 13:57:58 GMT 2019
+&date is: Wed Feb 20 14:27:35 GMT 2019
 strDate is: 20/02/2019
 Amount is: 1000.1
 Amount is: 2000.01

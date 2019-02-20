@@ -25,13 +25,21 @@ public class Account {
 
   public void makeDeposit(double amount) {
     System.out.println("Amount is: " + amount);
+    isAmountPositive(amount);
     balance += amount;
     transaction.addTransaction(new Date(), 1, amount, balance);
   }
 
   public void makeWithdrawal(double amount) {
     System.out.println("Amount is: " + amount);
+    isAmountPositive(amount);
     balance -= amount;
     transaction.addTransaction(new Date(), 0, -amount, balance);
+  }
+
+  public void isAmountPositive(double amount) {
+    if (amount <= 0) {
+      throw new IllegalArgumentException("Error: amount must be positive.");
+    }
   }
 }
