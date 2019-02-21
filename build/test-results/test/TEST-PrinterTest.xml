@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="PrinterTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-02-21T17:13:36" hostname="Andrews-MacBook-Pro.local" time="0.002">
+<testsuite name="PrinterTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-02-21T18:14:20" hostname="Andrews-MacBook-Pro.local" time="0.002">
   <properties/>
   <testcase name="atest" classname="PrinterTest" time="0.002"/>
   <system-out><![CDATA[trans log element is: 21/02/2019 || || -500.00 || 2500.00

@@ -4,30 +4,28 @@
 ]
 Amount is: 1000.0
 Amount is: 1000.0
-Amount is: 1000.0
+Amount is: 2000.0
+Amount is: 500.0
 Amount is: 1000.0
-Amount is: 2000.0
-Amount is: 500.0
-
-	Amount is: -1.0
-
-Amount is: 0.0
-
-Amount is: -1.0
-
-Amount is: 1000.0
-
-Amount is: 1000.0
-
-Amount is: 0.0
-:trans log element is: 21/02/2019 || || -500.00 || 2500.00
-
-:trans log element is: 21/02/2019 || 2000.00 || || 3000.00
-
-:trans log element is: 21/02/2019 || 1000.00 || || 1000.00
-
-IAfter reverse testTransactionLog is: [date || credit || debit || balance
-&, 21/02/2019 || || -500.00 || 2500.00
-&, 21/02/2019 || 2000.00 || || 3000.00
-&, 21/02/2019 || 1000.00 || || 1000.00
-]
+Amount is: 1000.0
+	Amount is: 1000.0
+	Amount is: 2000.0
+	Amount is: 500.0
+
+Amount is: -1.0
+Amount is: 0.0
+Amount is: -1.0
+Amount is: 1000.0
+Amount is: 1000.0
+Amount is: 0.0
+:trans log element is: 21/02/2019 || || -500.00 || 2500.00
+
+:trans log element is: 21/02/2019 || 2000.00 || || 3000.00
+
+:trans log element is: 21/02/2019 || 1000.00 || || 1000.00
+
+IAfter reverse testTransactionLog is: [date || credit || debit || balance
+&, 21/02/2019 || || -500.00 || 2500.00
+&, 21/02/2019 || 2000.00 || || 3000.00
+&, 21/02/2019 || 1000.00 || || 1000.00
+]
