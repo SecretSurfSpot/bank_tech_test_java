@@ -14,7 +14,7 @@ public class TransactionTest {
   public void setup() {
     testHelper = new TestHelper();
     transaction = new Transaction();
-    testHelper.createTestTransactionLog();
+    testHelper.createExpectedTestTransactionLog();
   }
 
   @Test
@@ -35,7 +35,7 @@ public class TransactionTest {
     transaction.addTransaction(testHelper.date, 1, 2000.00, 3000.00);
     transaction.addTransaction(testHelper.date, 0, -500.00, 2500.00);
 
-    System.out.println("XXX testHelper testTransactionLog is: " + testHelper.testTransactionLog);
-    assertEquals(testHelper.testTransactionLog, transaction.transactionLog);
+    System.out.println("XXX testHelper testExpectedTransactionLog is: " + testHelper.testExpectedTransactionLog);
+    assertEquals(testHelper.testExpectedTransactionLog, transaction.transactionLog);
   }
 }
