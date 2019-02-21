@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="FeatureTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-02-21T14:58:36" hostname="Andrews-MacBook-Pro.local" time="0.004">
+<testsuite name="FeatureTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-02-21T17:13:36" hostname="Andrews-MacBook-Pro.local" time="0.004">
   <properties/>
-  <testcase name="make2Deposits1Withdrawal" classname="FeatureTest" time="0.004"/>
+  <testcase name="depostiIncreasesBalance" classname="FeatureTest" time="0.001"/>
+  <testcase name="withdrawalDecreasesBalance" classname="FeatureTest" time="0.001"/>
+  <testcase name="depositX2WithdrawalX1AddedToTransaction" classname="FeatureTest" time="0.001"/>
   <system-out><![CDATA[Amount is: 1000.0
+Amount is: 1000.0
+Amount is: 1000.0
+Amount is: 1000.0
 Amount is: 2000.0
 Amount is: 500.0
-account.transaction.transactionLog is : [21/02/2019 || 1000.00 || || 1000.00
-, 21/02/2019 || 2000.00 || || 3000.00
-, 21/02/2019 || || -500.00 || 2500.00
-]
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

@@ -18,13 +18,25 @@ public class FeatureTest {
   }
 
   @Test
-  public void make2Deposits1Withdrawal() {
+  public void depostiIncreasesBalance() {
+      account.makeDeposit(1000.00);
+      assertTrue(account.currentBalance() == 1000.00);
+  }
+
+  @Test
+  public void withdrawalDecreasesBalance() {
+      account.makeDeposit(1000.00);
+      account.makeWithdrawal(1000.00);
+      assertTrue(account.currentBalance() == 0.00);
+  }
+
+  @Test
+  public void depositX2WithdrawalX1AddedToTransaction() {
       testHelper.createTestTransactionLog();
       account.makeDeposit(1000.00);
       account.makeDeposit(2000.00);
       account.makeWithdrawal(500.00);
       assertTrue(account.currentBalance() == 2500.00);
-      System.out.println("account.transaction.transactionLog is : " + account.transaction.transactionLog);
       assertEquals(testHelper.testTransactionLog, account.transaction.transactionLog);
   }
 }

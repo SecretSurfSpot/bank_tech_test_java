@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TransactionTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-02-21T14:58:36" hostname="Andrews-MacBook-Pro.local" time="0.063">
+<testsuite name="TransactionTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-02-21T17:13:36" hostname="Andrews-MacBook-Pro.local" time="0.063">
   <properties/>
   <testcase name="withdrawalAddedToTransaction" classname="TransactionTest" time="0.054"/>
   <testcase name="depositX2WithdrawalX1AddedToTransaction" classname="TransactionTest" time="0.008"/>
   <testcase name="depostitAddedToTransaction" classname="TransactionTest" time="0.001"/>
-  <system-out><![CDATA[XXX testHelper testExpectedTransactionLog is: [21/02/2019 || 1000.00 || || 1000.00
+  <system-out><![CDATA[XXX testHelper testTransactionLog is: [21/02/2019 || 1000.00 || || 1000.00
 , 21/02/2019 || 2000.00 || || 3000.00
 , 21/02/2019 || || -500.00 || 2500.00
 ]
