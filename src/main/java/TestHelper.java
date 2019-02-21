@@ -21,9 +21,9 @@ public class TestHelper {
   }
 
   public ArrayList createTestTransactionLog() {
-    testTransactionLog.add("19/02/2019 || 1000.00 || || 1000.00\n");
-    testTransactionLog.add("19/02/2019 || 2000.00 || || 3000.00\n");
-    testTransactionLog.add("19/02/2019 || || -500.00 || 2500.00\n");
+    testTransactionLog.add(strDate + " || 1000.00 || || 1000.00\n");
+    testTransactionLog.add(strDate + " || 2000.00 || || 3000.00\n");
+    testTransactionLog.add(strDate + " || || -500.00 || 2500.00\n");
     return testTransactionLog;
   }
 }

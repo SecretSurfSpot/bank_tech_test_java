@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="AccountTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2019-02-21T14:30:36" hostname="Andrews-MacBook-Pro.local" time="0.014">
+<testsuite name="AccountTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2019-02-21T14:58:36" hostname="Andrews-MacBook-Pro.local" time="0.013">
   <properties/>
   <testcase name="validatesWithdrawal0AmountIsPositive_1" classname="AccountTest" time="0.008"/>
   <testcase name="validatesDepositAmountIsPositive_0" classname="AccountTest" time="0.001"/>
-  <testcase name="validatesDepositAmountIsPositive_1" classname="AccountTest" time="0.0"/>
-  <testcase name="depostiIncreasesBalance" classname="AccountTest" time="0.0"/>
-  <testcase name="zeroBalanceTest" classname="AccountTest" time="0.001"/>
+  <testcase name="validatesDepositAmountIsPositive_1" classname="AccountTest" time="0.001"/>
+  <testcase name="depostiIncreasesBalance" classname="AccountTest" time="0.001"/>
+  <testcase name="zeroBalanceTest" classname="AccountTest" time="0.0"/>
   <testcase name="withdrawalDecreasesBalance" classname="AccountTest" time="0.001"/>
   <testcase name="validatesWithdrawalAmountIsPositive_0" classname="AccountTest" time="0.001"/>
   <system-out><![CDATA[Amount is: -1.0

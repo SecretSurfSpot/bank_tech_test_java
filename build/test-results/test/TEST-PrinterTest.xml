@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="PrinterTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-02-21T14:30:36" hostname="Andrews-MacBook-Pro.local" time="0.002">
+<testsuite name="PrinterTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-02-21T14:58:36" hostname="Andrews-MacBook-Pro.local" time="0.001">
   <properties/>
-  <testcase name="atest" classname="PrinterTest" time="0.002"/>
-  <system-out><![CDATA[trans log element is: 19/02/2019 || || -500.00 || 2500.00
+  <testcase name="atest" classname="PrinterTest" time="0.001"/>
+  <system-out><![CDATA[trans log element is: 21/02/2019 || || -500.00 || 2500.00
 
-trans log element is: 19/02/2019 || 2000.00 || || 3000.00
+trans log element is: 21/02/2019 || 2000.00 || || 3000.00
 
-trans log element is: 19/02/2019 || 1000.00 || || 1000.00
+trans log element is: 21/02/2019 || 1000.00 || || 1000.00
 
 After reverse testTransactionLog is: [date || credit || debit || balance
-, 19/02/2019 || || -500.00 || 2500.00
-, 19/02/2019 || 2000.00 || || 3000.00
-, 19/02/2019 || 1000.00 || || 1000.00
+, 21/02/2019 || || -500.00 || 2500.00
+, 21/02/2019 || 2000.00 || || 3000.00
+, 21/02/2019 || 1000.00 || || 1000.00
 ]
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>

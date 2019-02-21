@@ -7,6 +7,7 @@ public class Printer {
   public ArrayList bankStatement = new ArrayList();
 
   public ArrayList printStatement(ArrayList transactionLog) {
+    bankStatement.clear();
     bankStatement.add("date || credit || debit || balance\n");
     for (int i = 0; i < transactionLog.size(); i++) {
       bankStatement.add(transactionLog.get(transactionLog.size() - 1 - i));
