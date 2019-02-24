@@ -62,15 +62,16 @@ Within jshell, type:
 The above commands result in the following output:
 ![Interaction Screenshot](https://github.com/SecretSurfSpot/bank_tech_test_java/blob/master/images/interaction_screenshot.png)
 
+
 ## Domain Model
 
 The model below illustrates the high-level structure of the application.
 
-Two main objects (constructor functions):
+Three main objects (Classes):
 
 1. **Account:** Takes inputs for both deposit and withdrawal amounts, keeps track of the balance and creates an instance of the Transactions class, which is passes relevant transaction details
 2. **Transaction:** Takes inputs from the Account class and creates/updates the transactions log.
-3. **Printer:** An independent stand alone class, which accepts an ArrayList as input and prints out a bank statement in the required format.
+3. **Printer:** An independent stand alone class, which accepts an ArrayList as input and prints out a bank statement in the required format. (in the context of the Bank Tech Test solution, the Printer class method printStatement is passed the transactionLog returned by the Transaction class method returnTransactionLog)
 
 
 ```
