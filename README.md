@@ -35,24 +35,71 @@ https://github.com/SecretSurfSpot/bank_tech_test_java
 To test the application:
 - Open Terminal (or a similar command line interface)
 - Run `gradle clean test` from the project root
+
 The above commands result in the following output:
 ![Test Screenshot](https://github.com/SecretSurfSpot/bank_tech_test_java/blob/master/images/test_screenshot.png)
 
 ### Use
 To use the application, open a Terminal in the project root and type:
 - `jshell --class-path build/classes/java/main`
+
 Within jshell, type:
+
+(To create an instance of the Account, and make some transactions):
 - `import main.java.Account;`
 - `Account account = new Account();`
 - `account.makeDeposit(1000.00);`
 - `account.makeDeposit(2000.00);`
 - `account.makeWithdrawal(500.00);`
 
-
+(To create an instance of the Printer, and pass the transactions log to the printer to print the bank statement):
 - `import main.java.Printer;`
 - `Printer printer = new Printer();`
 - `public ArrayList transactionLog = new ArrayList();`
 - `transactionLog = account.transaction.returnTransactionLog();`
 - `printer.printStatement(transactionLog);`
+
 The above commands result in the following output:
 ![Interaction Screenshot](https://github.com/SecretSurfSpot/bank_tech_test_java/blob/master/images/interaction_screenshot.png)
+
+## Domain Model
+
+The model below illustrates the high-level structure of the application.
+
+Two main objects (constructor functions):
+
+1. **Account:** Takes inputs for both deposit and withdrawal amounts, keeps track of the balance and creates an instance of the Transactions class, which is passes relevant transaction details
+2. **Transaction:** Takes inputs from the Account class and creates/updates the transactions log.
+3. **Printer:** An independent stand alone class, which accepts an ArrayList as input and prints out a bank statement in the required format.
+
+
+```
+    User
+╔════════════╗  
+║            ║ Interacts with application
+║  Terminal  ║ via REPL, e.g. JShell    
+║            ║
+╚════════════╝
+    |    |                       
+    |    |     ╔════════════╗     
+    |    |     ║            ║ public methods:  currentBalance, makeDeposit & makeWithdrawal
+    |    |---->║  Account   ║        
+    |          ║  (class)   ║ private methods: isAmountPositive           
+    |          ╚════════════╝    
+    |                |
+    |                |      ╔════════════╗     
+    |                |      ║            ║ public methods:  returnTransactionLog & addTransaction
+    |                |----->║Transaction ║        
+    |                       ║  (class)   ║         
+    |                       ╚════════════╝    
+    |
+    |
+    |
+    V                             
+╔════════════╗
+║            ║ public methods:  printStatement
+║   Printer  ║                  
+║  (class)   ║ private methods: createBankStatement & addHeader
+╚════════════╝            
+
+```
