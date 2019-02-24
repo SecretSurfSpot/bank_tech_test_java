@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TransactionTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-02-24T19:13:26" hostname="Andrews-MacBook-Pro.local" time="0.052">
+<testsuite name="TransactionTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-02-24T19:22:06" hostname="Andrews-MacBook-Pro.local" time="0.056">
   <properties/>
-  <testcase name="withdrawalAddedToTransaction" classname="TransactionTest" time="0.05"/>
-  <testcase name="depositX2WithdrawalX1AddedToTransaction" classname="TransactionTest" time="0.001"/>
-  <testcase name="depostitAddedToTransaction" classname="TransactionTest" time="0.001"/>
+  <testcase name="withdrawalAddedToTransaction" classname="TransactionTest" time="0.054"/>
+  <testcase name="depositX2WithdrawalX1AddedToTransaction" classname="TransactionTest" time="0.002"/>
+  <testcase name="depostitAddedToTransaction" classname="TransactionTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
