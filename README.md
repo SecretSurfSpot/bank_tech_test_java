@@ -28,6 +28,7 @@ The project can be found here:
 https://github.com/SecretSurfSpot/bank_tech_test_java
 
 ### Installation
+- Perquisites: Ensure your machine has Java SE installed, which can be found [here](https://www.oracle.com/technetwork/java/javase/downloads/index.html)
 - Clone the repo to your local machine:
 `git clone https://github.com/SecretSurfSpot/bank_tech_test_java.git`
 
