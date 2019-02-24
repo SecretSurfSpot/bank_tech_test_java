@@ -8,7 +8,6 @@ import java.util.Arrays;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
-
 public class PrinterTest {
 
   private TestHelper testHelper;
@@ -24,14 +23,12 @@ public class PrinterTest {
 
     testReveseTransactionLog.add("date || credit || debit || balance\n");
     for (int i = 0; i < testHelper.testTransactionLog.size(); i++) {
-      System.out.println("trans log element is: " + testHelper.testTransactionLog.get(testHelper.testTransactionLog.size()- 1 - i));
       testReveseTransactionLog.add(testHelper.testTransactionLog.get(testHelper.testTransactionLog.size() - 1 - i));
     }
-    System.out.println("After reverse testTransactionLog is: " + testReveseTransactionLog);
   }
 
   @Test
-  public void atest() {
+  public void printerPrintStatementOutputsStatement() {
     printer.printStatement(testHelper.testTransactionLog);
     assertEquals(testReveseTransactionLog, printer.bankStatement);
   }

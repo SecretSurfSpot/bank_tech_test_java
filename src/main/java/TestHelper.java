@@ -5,7 +5,6 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 
 public class TestHelper {
-
   public Date date = new Date();
   private String pattern = "dd/MM/yyyy";
   private SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);

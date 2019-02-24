@@ -8,6 +8,8 @@ import java.text.DecimalFormat;
 
 public class Transaction {
 
+  public ArrayList transactionLog_2 = new ArrayList();
+
   public ArrayList transactionLog = new ArrayList();
   private DecimalFormat formatter = new DecimalFormat("#0.00");
   private String pattern = "dd/MM/yyyy";
@@ -15,6 +17,7 @@ public class Transaction {
 
   public Transaction() {
     ArrayList transactionLog[];
+    ArrayList transactionLog_2[];
   }
 
   public ArrayList returnTransactionLog() {
