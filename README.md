@@ -36,7 +36,7 @@ To test the application:
 - Open Terminal (or a similar command line interface)
 - Run `gradle clean test` from the project root
 The above commands result in the following output:
-![Test Screenshot](https://github.com/SecretSurfSpot/bank_tech_test_java/blob/master/images/.png)
+![Test Screenshot](https://github.com/SecretSurfSpot/bank_tech_test_java/blob/master/images/test_screenshot.png)
 
 ### Use
 To use the application, open a Terminal in the project root and type:
@@ -55,4 +55,4 @@ Within jshell, type:
 - `transactionLog = account.transaction.returnTransactionLog();`
 - `printer.printStatement(transactionLog);`
 The above commands result in the following output:
-![Interaction Screenshot](https://github.com/SecretSurfSpot/bank_tech_test_java/blob/master/images/.png)
+![Interaction Screenshot](https://github.com/SecretSurfSpot/bank_tech_test_java/blob/master/images/interaction_screenshot.png)
