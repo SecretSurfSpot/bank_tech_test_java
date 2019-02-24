@@ -104,3 +104,8 @@ Three main objects (Classes):
 ╚════════════╝            
 
 ```
+
+## Possible Improvements
+- Tests could be refactored to adhere more to DRY principles
+- The Transaction class could be modified, removing 'presentation' logic from the addTransaction method and moving this logic into the Printer class
+- A class could be added to act as a 'controller' to make use of the overall classes more fluid
